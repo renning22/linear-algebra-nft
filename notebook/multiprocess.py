@@ -2,10 +2,10 @@
 import itertools
 from multiprocessing import Pool
 
+
 from matrix import mat_mul_by_idx
 
 pool = Pool(64)
-
 
 def one_step_by_idx(s):
     products = itertools.product(s, s)
