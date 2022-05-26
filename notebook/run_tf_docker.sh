@@ -1,0 +1,1 @@
+docker run --gpus all -it --rm -p 8888:8888 --mount type=bind,source="$(pwd)",target=/tf/ningr tensorflow/tensorflow:latest-gpu-jupyter
