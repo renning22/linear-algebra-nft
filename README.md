@@ -11,17 +11,7 @@ And matrices are also commonly used math objects in many fields like Physics, En
 
 There are $3^9$ (19683) such matrices:
 
-$$
-A = 
-
-\begin{bmatrix}
-a & b & c \\
-d & e & f \\
-g & h & i
-\end{bmatrix}
-
-\quad a,...,i \in \{ 0, 1, 2 \}
-$$
+![matrix_def](doc/matrix_def.png)
 
 And each of them represent a unique linear transformation in the 3-dimensional vector space over *GF(3)*.
 
@@ -33,29 +23,12 @@ Every matrix can be owned by a different math ❤️.
 
 ## Digital Assets
 
-Numbers are tedious so we represent $\{0 , 1, 2 \}$ as
-<img src="doc/red.png" width="15" height="15" />
-<img src="doc/green.png" width="15" height="15" />
-<img src="doc/blue.png" width="15" height="15" />.
+Numbers are tedious so we represent *{0, 1, 2 }* as ![r](doc/red.jpg) ![g](doc/green.jpg) ![b](doc/blue.jpg).
 
-For example,
-$
-\begin{bmatrix}
-1 & 0 & 0 \\
-0 & 0 & 0 \\
-0 & 0 & 0
-\end{bmatrix}
-$ is
+For example, ![example_1](doc/example_1.png) is
 
 ![#1](images/1.png)
 
-And
-$
-\begin{bmatrix}
-0 & 2 & 1 \\
-1 & 2 & 0 \\
-1 & 2 & 0
-\end{bmatrix}
-$ is
+And ![example_2](doc/example_2.png) is
 
 ![#5307](images/5307.png)
