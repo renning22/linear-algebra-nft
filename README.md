@@ -25,6 +25,16 @@ Every matrix can be owned by a different math ❤️.
 
 Numbers are tedious so we represent *{0, 1, 2 }* as ![r](doc/red.jpg) ![g](doc/green.jpg) ![b](doc/blue.jpg).
 
+1. ![r](doc/red.jpg) x ![r](doc/red.jpg) = ![r](doc/red.jpg)
+2. ![r](doc/red.jpg) x ![g](doc/green.jpg) = ![r](doc/red.jpg)
+3. ![r](doc/red.jpg) x ![b](doc/blue.jpg) = ![r](doc/red.jpg)
+4. ![g](doc/green.jpg) x ![r](doc/red.jpg) = ![r](doc/red.jpg)
+5. ![g](doc/green.jpg) x ![g](doc/green.jpg) = ![g](doc/green.jpg)
+6. ![g](doc/green.jpg) x ![b](doc/blue.jpg) = ![b](doc/blue.jpg)
+7. ![b](doc/blue.jpg) x ![r](doc/red.jpg) = ![r](doc/red.jpg)
+8. ![b](doc/blue.jpg) x ![g](doc/green.jpg) = ![b](doc/blue.jpg)
+9. ![b](doc/blue.jpg) x ![b](doc/blue.jpg) = ![g](doc/green.jpg)
+
 All 19683 assets images are pre-generated [/images/*.png](/images/).
 
 ### Example 1
@@ -37,6 +47,10 @@ All 19683 assets images are pre-generated [/images/*.png](/images/).
 
 
 ## Multiplication
+
+![matrix_mul_def](doc/matrix_mul_def.png)
+
+### Example
 
 ![matrix_mul](doc/matrix_mul.png)
 
