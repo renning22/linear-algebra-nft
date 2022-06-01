@@ -32,3 +32,12 @@ For example, ![example_1](doc/example_1.png) is
 And ![example_2](doc/example_2.png) is
 
 ![#5307](images/5307.png)
+
+All 19683 assets images are pre-generated `/images/*.png`.
+
+## Multiplication
+
+For example,
+![matrix_mul](doc/matrix_mul.png)
+
+![#1](images/123.png) x ![#5307](images/5307.png) = ![#5307](images/351.png)
