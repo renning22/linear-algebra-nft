@@ -25,19 +25,21 @@ Every matrix can be owned by a different math ❤️.
 
 Numbers are tedious so we represent *{0, 1, 2 }* as ![r](doc/red.jpg) ![g](doc/green.jpg) ![b](doc/blue.jpg).
 
-For example, ![example_1](doc/example_1.png) is
+All 19683 assets images are pre-generated [/images/*.png](/images/).
 
-![#1](images/1.png)
+### Example 1
 
-And ![example_2](doc/example_2.png) is
+![example_1](doc/example_1.png) is ![#1](images/1.png)
 
-![#5307](images/5307.png)
+### Example 2
 
-All 19683 assets images are pre-generated `/images/*.png`.
+![example_2](doc/example_2.png) is ![#5307](images/5307.png)
+
 
 ## Multiplication
 
-For example,
 ![matrix_mul](doc/matrix_mul.png)
+
+is equivalent to 
 
 ![#1](images/123.png) x ![#5307](images/5307.png) = ![#5307](images/351.png)
