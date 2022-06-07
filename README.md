@@ -23,7 +23,21 @@ Every matrix can be owned by a different math ❤️.
 
 ## Digital Assets
 
-Numbers are tedious so we represent *{0, 1, 2 }* as ![r](doc/red.jpg) ![g](doc/green.jpg) ![b](doc/blue.jpg).
+Numbers are tedious so we represent *{0, 1, 2}* as ![r](doc/red.jpg) ![g](doc/green.jpg) ![b](doc/blue.jpg).
+
+### Addition rules
+
+1. ![r](doc/red.jpg) + ![r](doc/red.jpg) = ![r](doc/red.jpg)
+2. ![r](doc/red.jpg) + ![g](doc/green.jpg) = ![g](doc/green.jpg)
+3. ![r](doc/red.jpg) + ![b](doc/blue.jpg) = ![b](doc/blue.jpg)
+4. ![g](doc/green.jpg) + ![r](doc/red.jpg) = ![r](doc/red.jpg)
+5. ![g](doc/green.jpg) + ![g](doc/green.jpg) = ![g](doc/green.jpg)
+6. ![g](doc/green.jpg) + ![b](doc/blue.jpg) = ![b](doc/blue.jpg)
+7. ![b](doc/blue.jpg) + ![r](doc/red.jpg) = ![b](doc/blue.jpg)
+8. ![b](doc/blue.jpg) + ![g](doc/green.jpg) = ![r](doc/red.jpg)
+9. ![b](doc/blue.jpg) + ![b](doc/blue.jpg) = ![g](doc/green.jpg)
+
+### Multiplication rules
 
 1. ![r](doc/red.jpg) x ![r](doc/red.jpg) = ![r](doc/red.jpg)
 2. ![r](doc/red.jpg) x ![g](doc/green.jpg) = ![r](doc/red.jpg)
@@ -35,6 +49,8 @@ Numbers are tedious so we represent *{0, 1, 2 }* as ![r](doc/red.jpg) ![g](doc/g
 8. ![b](doc/blue.jpg) x ![g](doc/green.jpg) = ![b](doc/blue.jpg)
 9. ![b](doc/blue.jpg) x ![b](doc/blue.jpg) = ![g](doc/green.jpg)
 
+### Pre-generated images
+
 All 19683 assets images are pre-generated [/images/*.png](/images/).
 
 ### Example
@@ -45,9 +61,9 @@ All 19683 assets images are pre-generated [/images/*.png](/images/).
 
 ## Asset Index
 
-Every digital asset has a unique index and correspond to a unique matrix.
+Every digital asset (matrix) has a unique index.
 
-It is base3-encoding through matrix elements (row-wise).
+It is base3-encoding through out all elements (row-wise).
 
 ### Example
 
@@ -55,6 +71,16 @@ It is base3-encoding through matrix elements (row-wise).
  
 ![example_2](doc/example_2.png) is `#5307` 
 
+
+## Addition
+
+Two digital assets can be added together.
+
+### Example
+
+![matrix_add_1](doc/matrix_add_1.png)
+
+![#31](images/31.png) + ![#5307](images/5307.png) = ![#5572](images/5572.png)
 
 ## Multiplication
 
@@ -68,7 +94,7 @@ Two digital assets can be multiplied to generate a 3rd asset.
 
 is equivalent to 
 
-![#1](images/123.png) x ![#5307](images/5307.png) = ![#5307](images/351.png)
+![#123](images/123.png) x ![#5307](images/5307.png) = ![#351](images/351.png)
 
 ## Rarity
 
@@ -104,8 +130,8 @@ The goal is to unlock all 19683 assets by the community.
 
 When the goal is reached:
 
-1. All locked multiplication fees (in the pool) are returned to the original minters.
-2. A special price (`100 ETH`) are sent to owner of some particular matrices. (Details later)
+1. All locked multiplication fees (in the pool) will be returned to the current owners.
+2. A special price (`100 ETH`) will be granted to the owners of some rare matrices. (Details to be revealed)
 
 
 ## Transfer
