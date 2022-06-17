@@ -31,6 +31,26 @@ class Matrix:
                 v += self.m[r][c]
         return v
 
+    def inverse(self):
+        a = self.m.astype(int)
+        A = a[1][1] * a[2][2] - a[1][2] * a[2][1]
+        B = -(a[0][1] * a[2][2] - a[0][2] * a[2][1])
+        C = a[0][1] * a[1][2] - a[0][2] * a[1][1]
+        D = -(a[1][0] * a[2][2] - a[1][2] * a[2][0])
+        E = a[0][0] * a[2][2] - a[0][2] * a[2][0]
+        F = -(a[0][0] * a[1][2] - a[0][2] * a[1][0])
+        G = a[1][0] * a[2][1] - a[1][1] * a[2][0]
+        H = -(a[0][0] * a[2][1] - a[0][1] * a[2][0])
+        I = a[0][0] * a[1][1] - a[0][1] * a[1][0]
+
+        b = np.array([[A, B, C],
+                      [D, E, F],
+                      [G, H, I]])
+
+        b = b * int(np.linalg.det(a))
+        b = b % Matrix.P
+        return Matrix(m=b.astype(np.uint8))
+
     def __mul__(self, other):
         new_m = self.m @ other.m % Matrix.P
         return Matrix(m=new_m)
@@ -49,6 +69,7 @@ class Matrix:
 
 
 mul_by_idx_cache = np.zeros(pow(3, 18), dtype=np.int32)
+
 
 def mat_mul_by_idx(i):
     mul_lookup = i[0] * pow(3, 9) + i[1]
@@ -83,3 +104,6 @@ if __name__ == '__main__':
 
     t = Matrix(19683 - 1) * Matrix(1)
     print(t, t.idx())
+
+    t = Matrix(1024)
+    print(f'\nA * inv(A) =\n{t * t.inverse()}')
